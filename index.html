@@ -8,16 +8,15 @@
 <body>
 
   <main class="container">
-    <section class="card">
-      <h1>🎉 Parabéns!</h1>
+    <div id="export-wrapper">
+    <section class="card" id="export-area">
+      <h1>🎉 Parabéns, Valente 🎉</h1>
 
       <p class="subtitle">
-        Você está indo muito bem. Continue firme!
+        Batemos a primeira meta!
       </p>
 
       <div class="progress-wrapper">
-        <span id="progressLabel"></span>
-
         <div class="progress-container">
           <div class="progress-bar" id="progressBar"></div>
         </div>
@@ -25,11 +24,29 @@
         <span id="percentage"></span>
       </div>
 
+      <span id="progressLabel"></span>
+
       <p class="footer-text">
-        Cada passo conta. Constância > intensidade.
+        40 dias de constância, 40 dias ouvindo a voz de Deus através das Escrituras.
+        <br /> Não é apenas sobre ler capítulos, é sobre transformar a mente.
       </p>
-    </section>
+
+ <p class="page-footer">
+  © 2026 CCRV Juiz de Fora · Desenvolvido por <span class="author">@gabriel.rigolon</span>
+</p>
+</section>
+</div>
+
+<button class="export-btn" onclick="exportImage()">
+  📸 Gerar imagem
+</button>
+
+<button onclick="setMode('normal')">Normal</button>
+<button onclick="setMode('story')">Story</button>
+
   </main>
+<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
+<script type="module" src="js/main.js"></script>
 
   <script type="module" src="js/main.js"></script>
 </body>
