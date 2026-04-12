@@ -1,9 +1,16 @@
 import { renderProgress } from './progress.js';
 
-const progressState = {
-  current: 115,
+const progressStateChapter = {
+  current: 291,
   total: 1189
 };
+
+const progressStateDay = {
+  current: 101,
+  total: 365
+};
+
+let progressState = progressStateDay;
 
 // regra de negócio
 renderProgress(progressState);
